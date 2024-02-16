@@ -63,5 +63,36 @@ public:
         }
     }
     
+    bool contains(int value){
+        if (root == nullptr) {
+            return false;
+        }
+        
+        Node* temp = root;
+        while (temp != nullptr) {
+            if (value < temp->value) {
+                temp = temp->left;
+                if (temp->value == value) {
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+            else if (value > temp->value) {
+                temp = temp->right;
+                if (temp->value == value) {
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+            else{
+                return true;
+            }
+        }
+        return false;
+    }
 };
 
