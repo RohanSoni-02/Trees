@@ -13,3 +13,25 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
+class Node{
+public:
+    int value;
+    Node* left;
+    Node* right;
+    
+    Node(int value){
+        this->value = value;
+        left = nullptr;
+        right = nullptr;
+    }
+};
+
+class BinarySearchTree{
+private:
+    Node* root;
+    
+    BinarySearchTree(){
+        root = nullptr;
+    }
+};
+
