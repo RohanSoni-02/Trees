@@ -27,7 +27,7 @@ public:
 };
 
 class BinarySearchTree{
-private:
+public:
     Node* root;
     
     BinarySearchTree(){
